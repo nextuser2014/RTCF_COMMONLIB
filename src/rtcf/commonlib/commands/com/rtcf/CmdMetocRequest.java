@@ -1,0 +1,62 @@
+package rtcf.commonlib.commands.com.rtcf;
+
+import java.io.Serializable;
+import java.sql.Time;
+
+import rtcf.commonlib.commands.RtcfCommandMessage;
+
+/**
+ * DSS System
+ * BAS Component
+ * CommandResult expected
+ * 
+ * @author agostinelli
+ *
+ */
+public class CmdMetocRequest extends RtcfCommandMessage implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1724652126085866613L;
+	private Double latitudeCentre;		//rad
+	private Double longitudeCentre;		//rad
+	private Double range;				//m
+	private Time requestTime;			//Secondi dal 1 gennaio 1970
+	private Integer history;			//H
+	private Integer forecast;			//H
+	
+	public CmdMetocRequest(Double latitudeCentre, Double longitudeCentre, Double range, Time requestTime, Integer history, Integer forecast) { 
+		super();
+		this.latitudeCentre = latitudeCentre; 	
+		this.longitudeCentre = longitudeCentre; 
+		this.range = range;					
+		this.requestTime = requestTime;			
+		this.history = history;					
+		this.forecast = forecast;				
+	}
+
+	public Double getLatitudeCentre() {
+		return latitudeCentre;
+	}
+	
+	public Double getLongitudeCentre() {
+		return longitudeCentre;
+	}
+	
+	public Double getRadius() {
+		return range;
+	}
+	
+	public Time getRequestTime() {
+		return requestTime;
+	}
+	
+	public Integer getHistory() {
+		return history;
+	}
+	
+	public Integer getForecast() {
+		return forecast;
+	}
+}
