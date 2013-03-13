@@ -6,8 +6,6 @@ import java.sql.Time;
 import rtcf.commonlib.commands.RtcfCommandMessage;
 
 /**
- * DSS System
- * BAS Component
  * CommandResult expected
  * 
  * @author agostinelli

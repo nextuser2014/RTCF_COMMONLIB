@@ -5,9 +5,8 @@ import java.io.Serializable;
 import rtcf.commonlib.commands.RtcfCommandMessage;
 
 /**
- * DSS System
- * BAS Component
- * CommandResult expected: CommandResultSession
+
+ * CommandResult expected: RtcfCommandResultSession
  * 
  * @author agostinelli
  *

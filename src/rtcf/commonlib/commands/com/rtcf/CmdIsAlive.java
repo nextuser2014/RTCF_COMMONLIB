@@ -7,9 +7,8 @@ import rtcf.commonlib.enumeration.CssState;
 
 
 /**
- * DSS System
- * BAS Component
- * CommandResult expected
+
+ * Expected result : RtcfCommandResult 
  * 
  * @author agostinelli
  *
