@@ -1,7 +1,6 @@
 package rtcf.commonlib.artifact;
 
 import java.io.Serializable;
-import java.util.GregorianCalendar;
 
 public abstract class RtcfTopicArtifact implements Serializable  {
 
