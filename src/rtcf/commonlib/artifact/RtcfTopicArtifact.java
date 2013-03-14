@@ -5,24 +5,17 @@ import java.util.GregorianCalendar;
 
 public abstract class RtcfTopicArtifact implements Serializable  {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1814710039122169972L;
+	private static final long serialVersionUID = 6767848569646922284L;
 	private long id;
 	private String title; 
 	private String destination;
 	
-	public GregorianCalendar date;
+	//date seconds since 01-01-1970
+	private long date;
 	
 	public RtcfTopicArtifact(int id) {
 		super();
 		this.id = id;
-		this.date = new GregorianCalendar();
-	}
-
-	public GregorianCalendar getDate() {
-		return date;
 	}
 
 	public long getId() {
@@ -45,17 +38,20 @@ public abstract class RtcfTopicArtifact implements Serializable  {
 		this.destination = destination;
 	}
 
-	@Override
-	public String toString() {
-		return "TopicArtifact [id=" + id + ", title=[" + title
-				+ "], destination=[" + destination + "], date=[" 
-				+ date.get(GregorianCalendar.DAY_OF_MONTH) + "-"
-				+ (date.get(GregorianCalendar.MONTH)+1) + "-"
-				+ date.get(GregorianCalendar.YEAR) + " "
-				+ date.get(GregorianCalendar.HOUR) + ":"
-				+ date.get(GregorianCalendar.MINUTE) + ":"
-				+ date.get(GregorianCalendar.SECOND) + "]";
+	/**
+	 * 
+	 * @param date seconds since 01-01-1970
+	 */
+	public final long getDate() {
+		return date;
 	}
-	
+
+	/**
+	 * 
+	 * @param date seconds since 01-01-1970
+	 */
+	public final void setDate(long date) {
+		this.date = date;
+	}
 	
 }
