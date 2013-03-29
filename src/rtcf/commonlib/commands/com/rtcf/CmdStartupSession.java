@@ -1,12 +1,14 @@
 package rtcf.commonlib.commands.com.rtcf;
 
 import java.io.Serializable;
+import javax.jms.Destination;
 
 import rtcf.commonlib.commands.RtcfCommandMessage;
 
 /**
-
- * CommandResult expected: RtcfCommandResultSession
+ * DSS System
+ * BAS Component
+ * CommandResult expected: CommandResultSession
  * 
  * @author agostinelli
  *
@@ -18,5 +20,6 @@ public class CmdStartupSession extends RtcfCommandMessage implements Serializabl
 	public CmdStartupSession() { 
 		super();
 	}
+
 	
 }

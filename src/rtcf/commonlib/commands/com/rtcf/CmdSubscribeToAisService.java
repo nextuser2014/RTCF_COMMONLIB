@@ -4,14 +4,16 @@ import java.io.Serializable;
 
 import rtcf.commonlib.commands.RtcfCommandMessage;
 
-/**
- * Subscribe to AIS service
- * 
- * expected result : RtcfCommandResult
- * 
- */
 public class CmdSubscribeToAisService extends RtcfCommandMessage implements Serializable {
 
+	/**
+	 * Subscribe to AIS service
+	 * 
+	 * expected result : CommandResult
+	 * 
+	 */
+	
+	
 	private static final long serialVersionUID = -8836146183764123370L;
 
 	private String temporaryTopic;
@@ -24,7 +26,7 @@ public class CmdSubscribeToAisService extends RtcfCommandMessage implements Seri
 		this.temporaryTopic = temporaryTopic;		
 		this.longitudeCentre = longitudeCentre;	
 		this.latitudeCentre = latitudeCentre;
-		this.range = range;
+    this.range = range;
 	}
 
 	public String getTemporaryTopic() {

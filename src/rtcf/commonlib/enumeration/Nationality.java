@@ -110,7 +110,7 @@ public enum Nationality implements java.io.Serializable {
 	UAE(125, "UNITED_ARABIAN_EMIRATES", "UA"),
 	RESET_TO_NO_STATEMENT(126, "RESET_TO_NO_STATEMENT", "RN");
 
-	private Nationality(int value, String abbreviation, String biLetter) {
+  private Nationality(int value, String abbreviation, String biLetter) {
 		this.intValue = value;
 		this.abbreviation = abbreviation;
 		this.biLetter = biLetter;
