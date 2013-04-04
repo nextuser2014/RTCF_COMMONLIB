@@ -5,10 +5,11 @@ import java.util.ArrayList;
 
 public class MeteoDataSet implements Serializable {
 
-	private static final long serialVersionUID = -3960504984838111465L;
+	private static final long serialVersionUID = -7471993539421541533L;
 	
 	private Double latitudeCentre;		//rad
 	private Double longitudeCentre;		//rad
+	private long currentTime; 			// seconds from 01-01-1970
 	private MeteoData currentData;
 	private ArrayList<MeteoData> historyData;
 	private ArrayList<MeteoData> forecastData;
@@ -53,9 +54,18 @@ public class MeteoDataSet implements Serializable {
 		return forecastData;
 	}
 	
+	public final long getCurrentTime() {
+		return currentTime;
+	}
+
+	public final void setCurrentTime(long currentTime) {
+		this.currentTime = currentTime;
+	}
+
 	public void setForecastData(ArrayList<MeteoData> forecastData) {
 		this.forecastData = forecastData;
 	}
+	
 	
 	
 }

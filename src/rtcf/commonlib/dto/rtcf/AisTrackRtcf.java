@@ -1,11 +1,9 @@
 package rtcf.commonlib.dto.rtcf;
 
 import java.io.Serializable;
-import java.sql.Time;
 
 import rtcf.commonlib.enumeration.AISTrackStatus;
 import rtcf.commonlib.enumeration.Nationality;
-
 
 /**
  * RTCF Simulator (STUB)
@@ -16,8 +14,7 @@ import rtcf.commonlib.enumeration.Nationality;
 
 public class AisTrackRtcf implements Serializable {
 
-	private static final long serialVersionUID = 1311881558838354961L;
-	
+	private static final long serialVersionUID = -7700303557470076386L;
 	private AisKinematic kinematic;
 	private String callSign;
 	private String name;
@@ -32,7 +29,7 @@ public class AisTrackRtcf implements Serializable {
 	private int aisImoNumber;
 	private int aisDraught;
 	private String aisDestination;
-	private Time aisEta;			//Secondi dal 1 gennaio 1970
+	private long aisEta;			//Secondi dal 1 gennaio 1970
 	private AISTrackStatus trackStatus;
 	private boolean valid;
 
@@ -152,11 +149,11 @@ public class AisTrackRtcf implements Serializable {
 		this.aisDestination = aisDestination;
 	}
 
-	public Time getAisEta() {
+	public long getAisEta() {
 		return aisEta;
 	}
 
-	public void setAisEta(Time aisEta) {
+	public void setAisEta(long aisEta) {
 		this.aisEta = aisEta;
 	}
 

@@ -1,8 +1,6 @@
 package rtcf.commonlib.commands.com.rtcf;
 
 import java.io.Serializable;
-import java.sql.Time;
-
 import rtcf.commonlib.commands.RtcfCommandMessage;
 
 /**
@@ -15,18 +13,15 @@ import rtcf.commonlib.commands.RtcfCommandMessage;
  */
 public class CmdMetocRequest extends RtcfCommandMessage implements Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1724652126085866613L;
+	private static final long serialVersionUID = 3118410259726597038L;
 	private Double latitudeCentre;		//rad
 	private Double longitudeCentre;		//rad
 	private Double range;				//m
-	private Time requestTime;			//Secondi dal 1 gennaio 1970
+	private Long requestTime;			//Secondi dal 1 gennaio 1970
 	private Integer history;			//H
 	private Integer forecast;			//H
 	
-	public CmdMetocRequest(Double latitudeCentre, Double longitudeCentre, Double range, Time requestTime, Integer history, Integer forecast) { 
+	public CmdMetocRequest(Double latitudeCentre, Double longitudeCentre, Double range, Long requestTime, Integer history, Integer forecast) { 
 		super();
 		this.latitudeCentre = latitudeCentre; 	
 		this.longitudeCentre = longitudeCentre; 
@@ -48,7 +43,7 @@ public class CmdMetocRequest extends RtcfCommandMessage implements Serializable 
 		return range;
 	}
 	
-	public Time getRequestTime() {
+	public Long getRequestTime() {
 		return requestTime;
 	}
 	

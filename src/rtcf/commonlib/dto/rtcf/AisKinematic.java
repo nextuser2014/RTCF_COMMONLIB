@@ -1,7 +1,5 @@
 package rtcf.commonlib.dto.rtcf;
 
-import java.sql.Time;
-
 /**
  * RTCF Simulator (STUB)
  * 
@@ -18,7 +16,7 @@ public class AisKinematic implements java.io.Serializable {
 	private Float course;			//rad
 	private Float speed;			//m/s
 	private int tq;					//6 se PAC = 1; 2 se PAC = 0
-	private Time validityTime;		//Sec dal 1 Gennaio 1970
+	private long validityTime;		//Sec dal 1 Gennaio 1970
 	
 	public AisKinematic() {
 		super();
@@ -64,11 +62,11 @@ public class AisKinematic implements java.io.Serializable {
 		this.tq = tq;
 	}
 
-	public Time getValidityTime() {
+	public long getValidityTime() {
 		return validityTime;
 	}
 
-	public void setValidityTime(Time validityTime) {
+	public void setValidityTime(long validityTime) {
 		this.validityTime = validityTime;
 	}
 
