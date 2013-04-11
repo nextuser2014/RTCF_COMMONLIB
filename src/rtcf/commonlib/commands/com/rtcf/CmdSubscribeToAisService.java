@@ -14,23 +14,23 @@ public class CmdSubscribeToAisService extends RtcfCommandMessage implements Seri
 	 */
 	
 	
-	private static final long serialVersionUID = -8836146183764123370L;
+	private static final long serialVersionUID = 1520242132757023816L;
 
-	private String temporaryTopic;
+	private String temporaryQueue;
 	private double longitudeCentre;		//rad
 	private double latitudeCentre;		//rad
 	private double range;				//m
 
-	public CmdSubscribeToAisService(String temporaryTopic, double longitudeCentre, double latitudeCentre, double range) {
+	public CmdSubscribeToAisService(String temporaryQueue, double longitudeCentre, double latitudeCentre, double range) {
 		super();
-		this.temporaryTopic = temporaryTopic;		
+		this.temporaryQueue = temporaryQueue;
 		this.longitudeCentre = longitudeCentre;	
 		this.latitudeCentre = latitudeCentre;
     this.range = range;
 	}
 
-	public String getTemporaryTopic() {
-		return temporaryTopic;
+	public String getTemporaryQueue() {
+		return temporaryQueue;
 	}
 	
 	public double getLongitudeCentre() {

@@ -7,7 +7,7 @@ import rtcf.commonlib.enumeration.ErrorCode;
 
 public class RtcfCommandResult implements Serializable{
 
-		private static final long serialVersionUID = 3702463435705219720L;
+		private static final long serialVersionUID = 7934877675121390435L;
 		private ErrorCode result; // 0:OK   !=0:not ok
 	    private long commandId; // identificativo univoco del comando
 

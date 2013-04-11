@@ -15,7 +15,7 @@ import rtcf.commonlib.commands.RtcfCommandMessage;
  */
 public class CmdStartupSession extends RtcfCommandMessage implements Serializable {
 
-	private static final long serialVersionUID = -1582054800484957780L;
+	private static final long serialVersionUID = 754106411247310880L;
 	
 	public CmdStartupSession() { 
 		super();

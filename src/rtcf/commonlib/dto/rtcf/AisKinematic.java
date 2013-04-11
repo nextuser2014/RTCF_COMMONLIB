@@ -9,14 +9,14 @@ package rtcf.commonlib.dto.rtcf;
 
 public class AisKinematic implements java.io.Serializable {
 
-	private static final long serialVersionUID = -739501132227651110L;
+	private static final long serialVersionUID = 4311584243064998605L;
 
 	private Float latitude;			//grad
 	private Float longitude;		//grad
 	private Float course;			//rad
 	private Float speed;			//m/s
 	private int tq;					//6 se PAC = 1; 2 se PAC = 0
-	private long validityTime;		//Sec dal 1 Gennaio 1970
+	private Long validityTime;		//Sec dal 1 Gennaio 1970
 	
 	public AisKinematic() {
 		super();
@@ -62,11 +62,11 @@ public class AisKinematic implements java.io.Serializable {
 		this.tq = tq;
 	}
 
-	public long getValidityTime() {
+	public Long getValidityTime() {
 		return validityTime;
 	}
 
-	public void setValidityTime(long validityTime) {
+	public void setValidityTime(Long validityTime) {
 		this.validityTime = validityTime;
 	}
 

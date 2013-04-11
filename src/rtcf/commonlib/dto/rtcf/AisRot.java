@@ -13,6 +13,7 @@ import rtcf.commonlib.enumeration.AISRotSide;
  * @author atanzi
  */
 public class AisRot implements Serializable{
+    private static final long serialVersionUID = 2702943488726574309L;
     
     private AISRotSide side = AISRotSide.ROT_NOT_TURNING;
     private float module;		//deg/sec

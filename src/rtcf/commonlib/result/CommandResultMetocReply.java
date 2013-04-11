@@ -13,6 +13,7 @@ import rtcf.commonlib.dto.rtcf.MeteoDataSet;
 public class CommandResultMetocReply extends RtcfCommandResult {
 
 	private static final long serialVersionUID = 8935364129193202317L;
+	
 	private ArrayList<MeteoDataSet> datasetMeteo;
 
 	public CommandResultMetocReply(){

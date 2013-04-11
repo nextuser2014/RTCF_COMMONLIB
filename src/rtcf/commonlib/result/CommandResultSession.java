@@ -2,7 +2,7 @@ package rtcf.commonlib.result;
 
 public class CommandResultSession extends RtcfCommandResult {
 
-	private static final long serialVersionUID = 4181924129020463096L;
+	private static final long serialVersionUID = -5257079183614254261L;
 	
 	private String temporaryChannel;
 

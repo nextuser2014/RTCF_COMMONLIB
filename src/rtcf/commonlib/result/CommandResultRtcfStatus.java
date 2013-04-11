@@ -10,7 +10,7 @@ import rtcf.commonlib.enumeration.CssState;
 
 public class CommandResultRtcfStatus extends RtcfCommandResult {
 
-	private static final long serialVersionUID = 4596380425935261805L;
+	private static final long serialVersionUID = 5621119858933378078L;
 	private CssState status;
 	private Long progId;
 	
