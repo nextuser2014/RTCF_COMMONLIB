@@ -8,13 +8,13 @@ public abstract class RtcfTopicArtifact implements Serializable  {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1814710039122169972L;
+	private static final long serialVersionUID = -5766244936916707578L;
 	private long id;
 	private String title; 
 	private String destination;
 	
 	public GregorianCalendar date;
-	
+
 	public RtcfTopicArtifact(int id) {
 		super();
 		this.id = id;
