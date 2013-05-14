@@ -1,5 +1,6 @@
 package rtcf.commonlib.result;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import rtcf.commonlib.dto.rtcf.MeteoDataSet;
@@ -10,7 +11,7 @@ import rtcf.commonlib.dto.rtcf.MeteoDataSet;
  *
  */
 
-public class CommandResultMetocReply extends RtcfCommandResult {
+public class CommandResultMetocReply extends RtcfCommandResult implements Serializable {
 
 	private static final long serialVersionUID = 8935364129193202317L;
 	

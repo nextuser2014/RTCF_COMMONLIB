@@ -4,7 +4,7 @@ import rtcf.commonlib.dto.rtcf.AisTrackRtcf;
 
 public class AisTrackArtifact extends RtcfTopicArtifact {
 
-	private static final long serialVersionUID = 1359150726509831378L;
+	private static final long serialVersionUID = -6370522459711539692L;
 	
 	private AisTrackRtcf aisTrack;
 
@@ -18,8 +18,12 @@ public class AisTrackArtifact extends RtcfTopicArtifact {
 		this.aisTrack = aisTrack;
 	}
 
-	public AisTrackRtcf getAisTracks() {
+	public AisTrackRtcf getAisTrack() {
 		return aisTrack;
 	}
-	
+
+  public void setAisTrack(AisTrackRtcf aisTrack) {
+		this.aisTrack = aisTrack;
+	}
+
 }

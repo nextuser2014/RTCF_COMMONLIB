@@ -63,6 +63,6 @@ public enum WeatherCode {
     public int getCode() {
         return code;
     }
-    int code = 0;
+    private int code = 0;
     private String description;
 }

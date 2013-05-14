@@ -7,7 +7,7 @@ import rtcf.commonlib.enumeration.WeatherCode;
 
 public class MeteoData implements Serializable{
 
-	private static final long serialVersionUID = 1505288900220589383L;
+	private static final long serialVersionUID = -4711369623740107212L;
 	private Float tempC;				//Celsius
 	private Float tempF;				//Farenheit
 	private Float windSpeed;			//m/s
@@ -21,7 +21,9 @@ public class MeteoData implements Serializable{
 	private Float swellDir;				//Rad
 	private Float swellPeriod;			//sec
 	private Float waterTempC;			//Celsius
-	
+	private Long initialTime;                    //Secondi dal 1 gennaio 1970
+  private Long finalTime;                    //Secondi dal 1 gennaio 1970
+
 	public MeteoData() {
 		super();			
 	}
@@ -129,6 +131,21 @@ public class MeteoData implements Serializable{
 	public void setWaterTempC(Float waterTempC) {
 		this.waterTempC = waterTempC;
 	}
-	
-	
+
+  public Long getFinalTime() {
+    return finalTime;
+  }
+
+  public void setFinalTime(Long finalTime) {
+    this.finalTime = finalTime;
+  }
+
+  public Long getInitialTime() {
+    return initialTime;
+  }
+
+  public void setInitialTime(Long initialTime) {
+    this.initialTime = initialTime;
+  }
+		
 }
